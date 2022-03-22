@@ -3,11 +3,17 @@ import React, { useState } from "react";
 
 const RollDie = () => {
   const dieArray = ["one", "two", "three", "four", "five", "six"];
+
+  let rando1 = Math.floor(Math.random() * 5)
+  let rando2 = Math.floor(Math.random() * 5)
+
+  console.log(dieArray[rando1])
+
   return (
     <>
       I contain the die
-      <Die />
-      <Die />
+      {/* <Die number={dieArray[rando1]} />
+      <Die number={dieArray[rando2]} /> */}
     </>
   );
 };
