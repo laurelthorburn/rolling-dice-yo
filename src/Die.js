@@ -1,7 +1,7 @@
-const Die = () => {
+const Die = ({number}) => {
     return ( 
         <>
-        I am the die
+        {number}
         </>
      );
 }
