@@ -4,16 +4,27 @@ import React, { useState } from "react";
 const RollDie = () => {
   const dieArray = ["one", "two", "three", "four", "five", "six"];
 
+  const [dieOne, setDieOne] = useState('');
+  const [dieTwo, setDieTwo] = useState('');
+
+  const handleRoll = () => {
 const roll = function(){
     const rando = Math.floor(Math.random() * dieArray.length);
     return dieArray[rando];
 } 
-
+setDieOne(roll());
+setDieTwo(roll());
+  }
 
   return (
     <>
-      <Die number={roll()} />
-      <Die number={roll()} />
+    <div className="RollDice">
+        <div className="RollDice--Die">
+      <Die number={dieOne} />
+      <Die number={dieTwo} />
+      </div>
+      <button onClick={handleRoll}>Roll Die!</button>
+      </div>
     </>
   );
 };
