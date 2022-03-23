@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rolling-dice-yo/static/css/main.c82ac779.css",
+    "main.js": "/rolling-dice-yo/static/js/main.bbf9b4c8.js",
+    "static/js/787.ebe7d637.chunk.js": "/rolling-dice-yo/static/js/787.ebe7d637.chunk.js",
+    "index.html": "/rolling-dice-yo/index.html",
+    "main.c82ac779.css.map": "/rolling-dice-yo/static/css/main.c82ac779.css.map",
+    "main.bbf9b4c8.js.map": "/rolling-dice-yo/static/js/main.bbf9b4c8.js.map",
+    "787.ebe7d637.chunk.js.map": "/rolling-dice-yo/static/js/787.ebe7d637.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c82ac779.css",
+    "static/js/main.bbf9b4c8.js"
+  ]
+}
