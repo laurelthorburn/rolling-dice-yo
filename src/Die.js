@@ -1,7 +1,8 @@
+import './App.css'
 const Die = ({number}) => {
     return ( 
         <>
-        {number}
+        <i className={`Die--image fas fa-dice-${number} fa-6x`}></i>
         </>
      );
 }
