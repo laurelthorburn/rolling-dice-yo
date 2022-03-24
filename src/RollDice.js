@@ -17,6 +17,7 @@ const RollDice = () => {
     setDieOne(roll());
     setDieTwo(roll());
     setRolling(true)
+    setTimeout(() => {setRolling(false)}, 1000);
   };
 
   return (
@@ -24,9 +25,11 @@ const RollDice = () => {
       <div className="RollDice">
         <div className="RollDice--Die">
           <Die number={dieOne} rolling={rolling} />
-          <Die number={dieTwo} rolling={rolling}/>
+          <Die number={dieTwo} rolling={rolling} />
         </div>
-        <button onClick={handleRoll}>Roll Die!</button>
+        <button onClick={handleRoll}>
+            {rolling ? 'Rolling...' : 'Roll Dice'}
+        </button>
       </div>
     </>
   );
