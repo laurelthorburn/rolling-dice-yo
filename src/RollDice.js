@@ -1,12 +1,12 @@
 import Die from "./Die";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './RollDice.css'
 
 const RollDice = () => {
   const dieArray = ["one", "two", "three", "four", "five", "six"];
 
-  const [dieOne, setDieOne] = useState("");
-  const [dieTwo, setDieTwo] = useState("");
+  const [dieOne, setDieOne] = useState("one");
+  const [dieTwo, setDieTwo] = useState("one");
   const [rolling, setRolling] = useState(false);  
 
   const handleRoll = () => {
@@ -27,7 +27,7 @@ const RollDice = () => {
           <Die number={dieOne} rolling={rolling} />
           <Die number={dieTwo} rolling={rolling} />
         </div>
-        <button onClick={handleRoll}>
+        <button onClick={handleRoll} disabled={rolling}>
             {rolling ? 'Rolling...' : 'Roll Dice'}
         </button>
       </div>

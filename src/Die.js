@@ -1,11 +1,11 @@
 import './App.css'
-import React, {useEffect} from 'react'
+import './RollDice.css'
 
-const Die = ({number}) => {
+const Die = ({number, rolling}) => {
 
     return ( 
         <>
-        <i className={`Die--image fas fa-dice-${number} fa-6x`}></i>
+        <i className={`Die--image fas fa-dice-${number} fa-6x ${rolling ? 'jiggle' : ''}`}></i>
         </>
      );
 }
