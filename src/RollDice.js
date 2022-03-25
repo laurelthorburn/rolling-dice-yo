@@ -23,12 +23,13 @@ const RollDice = () => {
   return (
     <>
       <div className="RollDice">
+        <div className="RollDice--title">Want to see me wobble? 🪆</div>
         <div className="RollDice--Die">
           <Die number={dieOne} rolling={rolling} />
           <Die number={dieTwo} rolling={rolling} />
         </div>
-        <button onClick={handleRoll} disabled={rolling}>
-            {rolling ? 'Rolling...' : 'Roll Dice'}
+        <button onClick={handleRoll} disabled={rolling} className="RollDice--button">
+            {rolling ? 'Wobble baby, wobble baby' : 'Wobble Dice'}
         </button>
       </div>
     </>

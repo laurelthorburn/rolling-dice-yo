@@ -4,9 +4,9 @@ import './RollDice.css'
 const Die = ({number, rolling}) => {
 
     return ( 
-        <>
-        <i className={`Die--image fas fa-dice-${number} fa-6x ${rolling ? 'jiggle' : ''}`}></i>
-        </>
+        <div className="Die">
+        <i className={`Die--image fas fa-dice-${number} fa-6x ${rolling ? 'wobble' : ''}`}></i>
+        </div>
      );
 }
  

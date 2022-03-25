@@ -1,4 +1,36 @@
-.jiggle {
+.RollDice--title{
+  color: rgb(231, 101, 170);
+  font-size: x-large;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.RollDice--Die{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.Die{
+  margin: 10px;
+}
+
+.RollDice--button{
+  background-color: rgb(211, 114, 166);
+  border-radius: 5px;
+  color: aliceblue;
+  height: 25px;
+}
+
+.RollDice--button:hover {
+  background-color: rgba(211, 114, 166, 0.384);
+  border-radius: 5px;
+  color: aliceblue;
+  height: 25px;
+  cursor: pointer;
+}
+
+.wobble {
     animation-name: shake;
     animation-duration: 1s;
   }
